@@ -23,7 +23,6 @@
 {
     [super viewDidLoad];
     
-    // Create Login View so that the app will be granted "status_update" permission.
     FBLoginView *loginview = [[FBLoginView alloc] init];
     
     loginview.frame = CGRectOffset(loginview.frame, 5, 5);
@@ -43,8 +42,8 @@
 
 #pragma mark - FBLoginViewDelegate
 
-- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-    // first get the buttons set for login mode
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
+{
 }
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
